@@ -21,15 +21,14 @@
         </header>
         <main>
             <section id = "aboutme">
-                <hgroup>
-                    <h2>About Me</h2>
-                    <picture>
-                        <img src = "picofme.png" alt = "Picture of Me">
-                    </picture>
-                    <p>Hello there! I am <strong>Santiago Duque</strong>, a motivated computer science student studying at the University of California San Diego.
-                        During my free time, I like <em>gaming</em>, going to <abbr title ="BLACKPINK">concerts/festivals</abbr>, and going to amusement parks!
-                    </p>        
-                </hgroup>
+                <h2>About Me</h2>
+                <picture>
+                    <source srcset = "otherpicofme.png" type = "image">
+                    <img src = "picofme.png" alt = "Picture of Me">
+                </picture>
+                <p>Hello there! I am <strong>Santiago Duque</strong>, a motivated computer science student studying at the University of California San Diego.
+                    During my free time, I like <em>gaming</em>, going to <abbr title ="BLACKPINK">concerts/festivals</abbr>, and going to amusement parks!
+                </p>        
                 <aside>
                     <details>
                         <summary>Fun Fact</summary>
@@ -40,8 +39,43 @@
 
             </section>
 
+            <section id = "projects">
+                <table>
+                    <caption>A Couple of Projects I've Worked On</caption>
+                    <colgroup>
+                        <col span = "1">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Projects</th>
+                            <th>Languages Used</th>
+                            <th>Link To Projects</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Developer Journal</th>
+                            <td><code>HTML, CSS, Javascript</code></td>
+                            <td><a href = "https://cse110-sp24-group26.github.io/final-project/">https://cse110-sp24-group26.github.io/final-project/</a></td>
+                        </tr>
+                        <tr>
+                            <th>File Compression/Decompression</th>
+                            <td><code>C++</code></td>
+                        </tr>
+                        <tr>
+                            <th>Brooklyn Property Price Predictors</th>
+                            <td><code>Python</code></td>
+                            <td><a href = "https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb">https://github.com/COGS108/Group044_WI24/blob/master/FinalProject_Group044_WI24.ipynb</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             <section id = "contact">
-                <h2>Contact Me</h2>
+                <hgroup>
+                    <h2>Contact Me</h2>
+                    <p>Email: <address><a href = "mailto:sduque@ucsd.edu">sduque@ucsd.edu</a></address></p>
+                </hgroup>
                 <form>
                     <fieldset>
                         <legend>Leave your information below!</legend>
@@ -49,8 +83,8 @@
                         <input type = "text" id = "userName" name = "User Name"><br/>
                         <label for = "email">Email: </label>
                         <input type = "text" id = "email" name = "User email"><br/>
-                        <label for = "message">Message: </label><br/>
-                        <textarea></textarea>
+                        <label for = "msg">Message: </label><br/>
+                        <textarea id = "msg" name = "msg" rows = "8" cols = "27"></textarea>
                         <button>Send</button>
                     </fieldset>
                 </form>
